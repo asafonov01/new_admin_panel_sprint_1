@@ -9,6 +9,7 @@ from psycopg2.extras import DictCursor
 from postgres_saver import PostgresSaver
 from sqlite_loader import SQLiteLoader
 
+
 logging.basicConfig(filename="logger.log", level=logging.INFO)
 log = logging.getLogger()
 
