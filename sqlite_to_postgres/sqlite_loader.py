@@ -2,7 +2,7 @@ from tableclasses import FilmWork, Genre, GenreFilmWork, Person, PersonFilmWork
 
 
 class SQLiteLoader(object):
-    def __init__(self, connection):
+    def __init__(self, connection, str):
         self.packet_size = 100  # количество записей в пакете
         self.cursor = connection.cursor()
         self.tableclasses = {
@@ -12,7 +12,6 @@ class SQLiteLoader(object):
             "genre_film_work": GenreFilmWork,
             "person_film_work": PersonFilmWork
         }
-
     def list_tables(self):
         return self.query("SELECT name FROM sqlite_master WHERE type='table'")
 

@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('movies', '0005_auto_20230703_0927'),
+        ('movies', '0005_AlterField'),
     ]
 
     operations = [

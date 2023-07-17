@@ -5,7 +5,7 @@ from django.db import migrations, models
 
 class Migration(migrations.Migration):
     dependencies = [
-        ('movies', '0002_auto_20230702_0819'),
+        ('movies', '0002_add_certificate_and_file_path'),
     ]
 
     operations = [
